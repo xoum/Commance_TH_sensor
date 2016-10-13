@@ -14,3 +14,6 @@ In this implementation, the data sent by the TH_sensor are received by a RFXCom 
 
 
 
+## Trademark Disclaimer
+
+Product names, logos, brands and other trademarks referred to within the Commance TH_sensor website are the property of their respective trademark holders. These trademark holders are not affiliated with Commance TH_sensor. They do not sponsor or endorse our materials.
