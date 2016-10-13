@@ -1,7 +1,7 @@
 # Commance TH_sensor
 TH_sensor is a battery powered Temperature and Hygrometric sensor sending data wirelessly through 433MHz for domotic application.
 
-You'll find many other implementation of that kind of sensors around the internet. Some of them are based on ATTiny85 and/or Dallas temperature sensors. However, I hope that my implementation will be usefull to the community
+You'll find many other implementation of that kind of sensors around the internet. Some of them are based on ATTiny85 and/or Dallas temperature sensors. However, I hope that my implementation will be usefull to the community. I've released a first version of this sensor arround a year ago and I'm now decided to force me to publish something on the internet. I would like to apologize to some authors if I used their contributions without quoting them. I have not written all sources of information that I used when I worked on this project. If you think it's relevant to quote your work, let me know!
 
 ## Hardware
 This project is based on:
