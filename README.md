@@ -14,7 +14,7 @@ In this implementation, the data sent by the TH_sensor are received by a RFXCom 
 
 ![Hardware involved](/images/photo_hardware1.jpg)
 
-_You'll notice the white wire soldered in the angle of the FS1000A radio module. You have to add this if your module do not have any antenna. It's optimal lenght should be quarter the wavelenght @433MHz: 17.3cm _
+*You'll notice the white wire soldered in the angle of the FS1000A radio module. You have to add this if your module do not have any antenna. It's optimal lenght should be quarter the wavelenght @433MHz: 17.3cm*
 
 ## Trademark Disclaimer
 
