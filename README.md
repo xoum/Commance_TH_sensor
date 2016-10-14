@@ -10,12 +10,12 @@ This project is based on:
 - A GY-21 sensor based on [SHT21](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf) Humidity and Temperature Sensor IC,
 - A 3xAA battery holder.
 
-In this implementation, the data sent by the TH_sensor are received by a RFXCom that I use for domotic stuff. Since I use [Oregon Scientific RF protocol](http://wmrx00.sourceforge.net/Arduino/OregonScientific-RF-Protocols.pdf) the TH_sensor should be compatible with all the receiver understanding the Oregon protocol.
+In this implementation, the data sent by the TH_sensor are received by a [RFXCom](http://www.rfxcom.com/epages/78165469.sf/en_GB/?ObjectPath=/Shops/78165469/Products/14103) that I use for domotic stuff. Since I use [Oregon Scientific RF protocol](http://wmrx00.sourceforge.net/Arduino/OregonScientific-RF-Protocols.pdf) the TH_sensor should be compatible with all the receiver understanding the Oregon protocol.
 
 ![Hardware involved](/images/photo_hardware1.jpg)
 
 *You'll notice the white wire soldered in the angle of the FS1000A radio module. You have to add this if your module do not have any antenna. It's optimal lenght should be quarter the wavelenght @433MHz: 17.3cm*
-### Low power optimization
+### Autonomy / Low power optimization
 The Commance TH_sensor is battery powered and we don't want to change or recharge the cells every days nor every weeks (in fact at the end the 3 AA battery are suitable for 1 year of service). We'll see here after how to reduce the power consumption by using software tricks. But now, what can we acheive on the hardware side?
 
 The biggest current drain is caused by the power LED! So, the first thing to do is to cut the conductive track of the power LED.
