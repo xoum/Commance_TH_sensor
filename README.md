@@ -23,7 +23,11 @@ The biggest current drain is caused by the power LED! So, the first thing to do 
 Then, the next current drain is caused by the 5V voltage regulator. Provided we are using a 3 cells battery holder we will supply the Arduino through its 5V pin directly (not with the RAW one). Doing this, the voltage regulator will not be used **but** it still drain current... The solution is to cut the conductive track linking the output of the 5v regulator to the 5V pin (close to the regulator).  
 ![details of tracks to cut](/images/zoom_cut.jpg)
 
-## SoftWare
+### Connexions
+
+
+
+## Software
 ### Library
 ### Battery tricks
 ### Radio tricks
