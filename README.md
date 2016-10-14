@@ -24,9 +24,8 @@ Then, the next current drain is caused by the 5V voltage regulator. Provided we 
 ![details of tracks to cut](/images/zoom_cut.jpg)
 
 ### Connexions
-
-![wiring](/images/wiring.png)  
-The pinout of the Arduino Pro Mini can change depending on version. The GY-21 sensor uses I2C for the communication with the Arduino and this data bus involves 2 lines: **SCL** (clock) and **SDA** (data). On the Arduino Pro Mini, the analog pin **A4** is **SDA** and the analog pin **A5** is **SCL**.
+The pinout of the Arduino Pro Mini can change depending on version. The GY-21 sensor uses I2C for the communication with the Arduino and this data bus involves 2 lines: **SCL** (clock) and **SDA** (data). On the Arduino Pro Mini, the analog pin **A4** is **SDA** and the analog pin **A5** is **SCL**.  
+![wiring](/images/wiring.png)
 
 ## Software
 ### Library
