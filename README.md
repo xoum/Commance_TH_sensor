@@ -5,7 +5,7 @@ You'll find many other implementation of that kind of sensors around the interne
 
 ## Hardware
 This project is based on:
-- An Arduino Pro Mini board or Arduino Nano board,
+- An Arduino Pro Mini board or Arduino Nano board 5V 16MHz,
 - A FS1000A 433MHz radio module,
 - A GY-21 sensor based on [SHT21](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf) Humidity and Temperature Sensor IC,
 - A 3xAA battery holder.
@@ -33,7 +33,28 @@ The pinout of the Arduino Pro Mini can change depending on version. The GY-21 se
 - [LowPower][LowPower lib]
 
 ### Battery tricks
+
+I'm using the LowPower library to put the ATmega328 in sleep mode. You can put the CPU in sleep mode for a maximum of 8 seconds (or forever). After height seconds, the CPU standup and continue to execute the code. When this happen I turn again the CPU in sleep mode for 8 more seconds and I do this between 25 to 31 time. I obtain temperature and hygrometrie every 3 to 4 minutes.
+
+Just before puting the CPU in sleep mode, I turn off the VIN of the GY-21 sensor and the VCC of the FS1000A radio module.
+
+The sensor can send a message when the battery is low, I send this message when the 3AA battery pack reaches a total voltage of 3.5 V (under this voltage the 5V 16MHz board doesn't work properly)
+
+To prevent deep discharge of the NiMH elements, I put the board in sleep mode forever when the voltage level go behind 3.3V
+
+By doing this, the current drained stays bellow 70µA the most part of the time (more than 3years for a 2000mAH NiMH battery, so far beyond its self-discharge)
+
 ### Radio tricks
+
+The only trick I use is to put a jitter on the number of 8 seconds sleeps of the CPU. When I use a high number of sensors, this avoid to have RF colisions during a long period of time. 
+Think that all the cards don't have exactly the same clock and if 2 sensors starts to broadcast theirs signal at the same time, with no jitter, they will continue to scramble each other for a long time.
+
+
+## Improvements
+It is maybe a good idea to use a 3.3V 8MHz Pro Mini board instead of the 5V 16MHz one. I've noticed some instability on some cards and I suppose this is due to the fact that the ATmega is not specified to work far under 5V @ 16MHz.
+
+If you need to boost the range of the RF signal, you can add a DC-DC voltage booster beetwen the digital pin 2 and the VCC on the radio module. Those FS1000A modules can go up to 12V.
+
 
 ## Trademark Disclaimer
 
