@@ -16,7 +16,7 @@ In this implementation, the data sent by the TH_sensor are received by a [RFXCom
 
 *You'll notice the white wire soldered in the angle of the FS1000A radio module. You have to add this if your module do not have any antenna. It's optimal lenght should be quarter the wavelenght @433MHz: 17.3cm*
 ### Autonomy / Low power optimization
-The Commance TH_sensor is battery powered and we don't want to change or recharge the cells every days nor every weeks (in fact at the end the 3 AA battery are suitable for 1 year of service). We'll see here after how to reduce the power consumption by using software tricks. But now, what can we acheive on the hardware side?
+The TH_sensor is battery powered and we don't want to change or recharge the cells every days nor every weeks (in fact at the end the 3 AA battery are suitable for 1 year of service). We'll see here after how to reduce the power consumption by using software tricks. But now, what can we acheive on the hardware side?
 
 The biggest current drain is caused by the power LED! So, the first thing to do is to cut the conductive track of the power LED.
 
@@ -24,4 +24,4 @@ Then, the next current drain is caused by the 5V voltage regulator. Provided we 
 
 ## Trademark Disclaimer
 
-Product names, logos, brands and other trademarks referred to within the Commance TH_sensor website are the property of their respective trademark holders. These trademark holders are not affiliated with Commance TH_sensor. They do not sponsor or endorse our materials.
+Product names, logos, brands and other trademarks referred to within the TH_sensor website are the property of their respective trademark holders. These trademark holders are not affiliated with TH_sensor. They do not sponsor or endorse our materials.
