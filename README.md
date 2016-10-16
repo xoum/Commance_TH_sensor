@@ -14,7 +14,7 @@ In this implementation, the data sent by the TH_sensor are received by a [RFXCom
 
 ![Hardware involved](/images/photo_hardware1.jpg)
 
-*You'll notice the white wire soldered in the angle of the FS1000A radio module. You have to add this if your module do not have any antenna. Its optimal lenght should be quarter the wavelength @433MHz: 17.3cm*
+*You'll notice the white wire soldered in the corner of the FS1000A radio module. You have to add this if your module do not have any antenna. Its optimal lenght should be quarter the wavelength @433MHz: 17.3cm*
 ### Autonomy / Low power optimization
 The TH_sensor is battery powered and we don't want to change or recharge the cells every days nor every weeks (in fact at the end the 3 AA battery are suitable for 1 year of service). We'll see here after how to reduce the power consumption by using software tricks. But now, what can we achieve on the hardware side?
 
@@ -42,7 +42,14 @@ The sensor can send a message when the battery is low, I send this message when 
 
 To prevent deep discharge of the NiMH elements, I put the board in sleep mode forever when the voltage level goes behind 3.3V
 
-By doing this, the current drained stays bellow 70µA the most part of the time (more than 3years for a 2000mAH NiMH battery, so far beyond its self-discharge)
+By doing this and hardware modifications, the current drained stays bellow 5µA the most part of the time.
+With 3 Alkaline AAA batteries:
+
+| Hardware  | Current  |
+|---|---|
+| Genuine  | 2.97mA  |
+| No LED  | 0.084mA  |
+| No LED, NO regul  | 0.005mA  |
 
 ### Radio tricks
 
