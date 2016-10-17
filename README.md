@@ -5,7 +5,7 @@ You'll find many other implementation of that kind of sensors around the interne
 
 ## Hardware
 This project is based on:
-- An Arduino Pro Mini board or Arduino Nano board 5V 16MHz,
+- An [Arduino Pro Mini](https://www.arduino.cc/en/Main/ArduinoBoardProMini) board or Arduino Nano board 5V 16MHz,
 - A FS1000A 433MHz radio module,
 - A GY-21 sensor based on [SHT21](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf) Humidity and Temperature Sensor IC,
 - A 3xAA battery holder.
