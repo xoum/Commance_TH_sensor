@@ -53,8 +53,8 @@ With 3 Alkaline AAA batteries:
 
 ### Radio tricks
 
-The only trick I use is to put a jitter on the number of 8 seconds sleeps of the CPU. When I use a high number of sensors, this avoids to have RF collisions during a long period of time. 
-Think that all the cards don't have exactly the same clock and if 2 sensors starts to broadcast theirs signal at the same time, with no jitter, they will continue to scramble each other for a long time.
+The only trick I use is to put a jitter on the number of 8 seconds sleeps of the CPU. When I use a high number of sensors, this avoids to have RF (Radio-Frequency) collisions during a long period of time. 
+Think that all the cards have not exactly the same clock and if 2 sensors starts to broadcast theirs signal at the same time, with no jitter, they will continue to scramble each other for a long time.
 
 
 ## Improvements
