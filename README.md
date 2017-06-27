@@ -1,4 +1,4 @@
-![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
+[![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
 
 TH_sensor is a battery powered Temperature and Hygrometric sensor sending data wirelessly through 433MHz for domotic application.
 
