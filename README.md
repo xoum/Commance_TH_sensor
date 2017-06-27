@@ -1,4 +1,5 @@
-#[![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
+![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
+
 TH_sensor is a battery powered Temperature and Hygrometric sensor sending data wirelessly through 433MHz for domotic application.
 
 You'll find many other implementation of that kind of sensors around the internet. Some of them are based on ATTiny85 and/or Dallas temperature sensors. However, I hope that my implementation will be useful to the community. I've released a first version of this sensor around a year ago and I'm now decided to force me to publish something on the internet. I would like to apologize to some authors if I used their contributions without quoting them. I have not written all sources of information that I used when I worked on this project. If you think it's relevant to quote your work, let me know!
@@ -14,7 +15,7 @@ In this implementation, the data sent by the TH_sensor are received by a [RFXCom
 
 ![Hardware involved](/images/photo_hardware1.jpg)
 
-*You'll notice the white wire soldered in the corner of the FS1000A radio module. You have to add this if your module do not have any antenna. Its optimal lenght should be quarter the wavelength @433MHz: 17.3cm*
+*You'll notice the white wire soldered in the corner of the FS1000A radio module. You have to add this if your module does not have any antenna. Its optimal lenght should be quarter the wavelength @433MHz: 17.3cm*
 ### Autonomy / Low power optimization
 The TH_sensor is battery powered and we don't want to change or recharge the cells every days nor every weeks (in fact at the end the 3 AA battery are suitable for 1 year of service). We'll see here after how to reduce the power consumption by using software tricks. But now, what can we achieve on the hardware side?
 
