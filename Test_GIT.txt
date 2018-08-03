@@ -1,1 +1,2 @@
-Modifs simultanées
+Modifs simultanÃ©es
+Ma modification depuis GIT
