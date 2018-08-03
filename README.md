@@ -31,7 +31,7 @@ The pinout of the Arduino Pro Mini can change depending on version. The GY-21 se
 ## Software
 ### Library
 - Adafruit_HTU21DF
-- [LowPower][LowPower_lib]
+- ![LowPower](https://github.com/rocketscream/Low-Power/)
 
 ### Battery tricks
 
@@ -71,4 +71,4 @@ Product names, logos, brands and other trademarks referred to within the TH_sens
 ## Sources
 http://www.connectingstuff.net/blog/encodage-protocoles-oregon-scientific-sur-arduino/  
 http://www.instructables.com/id/Secret-Arduino-Voltmeter/  
-[LowPower_lib]: https://github.com/rocketscream/Low-Power  "LowPower"
+https://github.com/rocketscream/Low-Power/
