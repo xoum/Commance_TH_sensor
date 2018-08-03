@@ -1,4 +1,4 @@
-[![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
+﻿[![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
 
 TH_sensor is a battery powered Temperature and Hygrometric sensor sending data wirelessly through 433MHz for domotic application.
 
@@ -63,6 +63,7 @@ It is maybe a good idea to use a 3.3V 8MHz Pro Mini board instead of the 5V 16MH
 
 If you need to boost the range of the RF signal, you can add a DC-DC voltage booster between the digital pin 2 and the VCC on the radio module. Those FS1000A modules can go up to 12V.
 
+I've tried to run the Pro Mini board at a lower rate but that do not fix the issue for the bogus cards.
 
 ## Trademark Disclaimer
 
