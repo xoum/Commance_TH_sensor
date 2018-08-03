@@ -71,4 +71,4 @@ Product names, logos, brands and other trademarks referred to within the TH_sens
 ## Sources
 http://www.connectingstuff.net/blog/encodage-protocoles-oregon-scientific-sur-arduino/  
 http://www.instructables.com/id/Secret-Arduino-Voltmeter/  
-[LowPower_lib]: https://github.com/rocketscream/Low-Power  
+[LowPower_lib]: https://github.com/rocketscream/Low-Power  "LowPower"
