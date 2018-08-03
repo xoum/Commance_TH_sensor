@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 Modifs simultanées
 
 Ma modif depuis Windows
+=======
+Modifs simultanÃ©es
+Ma modification depuis GIT
+>>>>>>> 5f6d3f6b32146bb1caf589d62166c9c8abb00237
