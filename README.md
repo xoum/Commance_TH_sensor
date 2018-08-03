@@ -1,4 +1,4 @@
-[![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
+﻿[![Commance](/images/logo_commance.png)](http://www.commance.com) TH_sensor
 
 TH_sensor is a battery powered Temperature and Hygrometric sensor sending data wirelessly through 433MHz for domotic application.
 
@@ -31,7 +31,7 @@ The pinout of the Arduino Pro Mini can change depending on version. The GY-21 se
 ## Software
 ### Library
 - Adafruit_HTU21DF
-- [LowPower][LowPower lib]
+- [LowPower][LowPower_lib]
 
 ### Battery tricks
 
@@ -71,4 +71,4 @@ Product names, logos, brands and other trademarks referred to within the TH_sens
 ## Sources
 http://www.connectingstuff.net/blog/encodage-protocoles-oregon-scientific-sur-arduino/  
 http://www.instructables.com/id/Secret-Arduino-Voltmeter/  
-[LowPower lib]: https://github.com/rocketscream/Low-Power  
+[LowPower_lib]: https://github.com/rocketscream/Low-Power  
